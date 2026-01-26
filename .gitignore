@@ -1,0 +1,98 @@
+# ======================
+# 操作系统 & 编辑器
+# ======================
+.DS_Store          # macOS
+Thumbs.db          # Windows
+desktop.ini        # Windows
+*.swp              # Vim 临时文件
+*~                 # Emacs 临时文件
+/.vscode/settings.json  # VS Code 个人设置（可选）
+
+# ======================
+# Python
+# ======================
+__pycache__/       # Python 字节码缓存
+*.pyc              # 编译后的 Python 文件
+*.pyo
+*.pyd
+.Python
+env/               # 虚拟环境（常见名）
+venv/              # 虚拟环境
+.venv/             # 隐藏虚拟环境（VS Code 推荐）
+ENV/
+.env               # 环境变量文件（敏感信息！）
+*.env
+tf_env/
+.env
+.env.local
+.env.development
+.env.production
+.env.*
+image_processing_steps/
+*.pyc
+.env
+# ======================
+# 依赖管理
+# ======================
+pip-log.txt
+pip-delete-this-directory.txt
+requirements/*.txt  # 如果你有多个 requirements 文件，可保留主文件如 requirements.txt
+!requirements.txt   # 但通常要提交主依赖文件！
+
+# ======================
+# 日志 & 数据
+# ======================
+logs/
+*.log
+data/              # 原始数据（大文件）
+datasets/
+*.csv              # 如果数据是生成的或敏感的（谨慎！）
+*.json             # 同上
+*.npy
+*.npz
+*.h5
+*.pth
+*.pt
+*.ckpt
+*.model
+*.jsonl
+
+# ======================
+# Jupyter
+# ======================
+.ipynb_checkpoints/
+*.ipynb            # 如果 notebook 是实验性质（非最终文档）
+
+# ======================
+# IDE & 工具
+# ======================
+.idea/             # PyCharm
+.vscode/           # 如果包含团队共享设置可保留，否则忽略
+*.sublime-project
+*.sublime-workspace
+.idea/
+# ======================
+# 构建 & 输出
+# ======================
+build/
+dist/
+*.egg-info/
+*.whl
+output/
+results/
+runs/              # PyTorch Lightning / TensorBoard 日志
+
+# ======================
+# 其他
+# ======================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.csv
+*.txt
+*.safet
+*.safetensors
