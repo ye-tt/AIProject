@@ -1,0 +1,59 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 73035877,
+  "description": "",
+  "download_checksums": {
+    "C:/Users/Jerry/Desktop/sweety/week10-main/data/me/\u513f\u79d15-14000.csv": {
+      "num_bytes": 48307180,
+      "checksum": null
+    }
+  },
+  "download_size": 48307180,
+  "features": {
+    "label": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "token_type_ids": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 121343057,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 73035877,
+      "num_examples": 101602,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

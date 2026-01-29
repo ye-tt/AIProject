@@ -31,6 +31,7 @@ tf_env/
 image_processing_steps/
 *.pyc
 .env
+models/
 # ======================
 # 依赖管理
 # ======================
@@ -96,3 +97,4 @@ Thumbs.db
 *.txt
 *.safet
 *.safetensors
+*.arrow

@@ -19,7 +19,9 @@ from app.services.knowledge_base import KnowledgeBase
 def get_knowledge_base() -> KnowledgeBase:
     from app.core.config import settings
 
-    return KnowledgeBase(index_path=settings.index_path, metadata_path=settings.metadata_path)
+    return KnowledgeBase(
+        index_path=settings.index_path, metadata_path=settings.metadata_path
+    )
 
 
 router = APIRouter()
@@ -32,7 +34,7 @@ def health() -> dict:
 
 @router.post("/ingest", response_model=IngestResponse)
 def ingest_text(
-    payload: IngestFromTextRequest,
+    payload: IngestFromTextRequest,  # Request payload for ingesting ad-hoc text via the API.
     embeddings: EmbeddingService = Depends(get_embedding_service),
     knowledge_base: KnowledgeBase = Depends(get_knowledge_base),
 ) -> IngestResponse:
